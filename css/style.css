@@ -1,5 +1,5 @@
 body { 
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #fefefe;
     margin: 0;
     padding: 0;
@@ -36,7 +36,9 @@ main {
     border-radius: 8px;
     text-align: center;
 }
-
+.about p {
+    font-size: 20px;
+}
 footer {
     background-color: #222;
     color: white;
@@ -47,8 +49,9 @@ footer {
 .projects {
     margin-top: 40px;
 }
-.projects h2 {
+.projects h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 .project-grid {
@@ -64,6 +67,9 @@ footer {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
     text-align: center;
+}
+.project-card p {
+    font-size: 20px;
 }
 .project-card:hover {
     transform: translateY(-5px);
@@ -103,4 +109,21 @@ footer {
 }
 .contact button:hover {
     background: #303f9f;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact form {
+        gap: 10px;
+    }
 }
